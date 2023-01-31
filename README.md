@@ -1,7 +1,7 @@
 # Génération des images
 ## A chaque mise à jour de l'image
 ```bash
-cd images\\wavenet-php
+cd images\wavenet-php
 build.bat
 ```
 **Est c'est quand une mise à jour de l'image ?**
