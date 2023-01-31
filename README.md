@@ -4,6 +4,8 @@
 cd images\\wavenet-php
 build.bat
 ```
+**Est c'est quand une mise à jour de l'image ?**
+- Quand une librairie a été ajoutée à l'image de base (aka : on a modifié le Dockerfile pour que vous ne deviez pas faire l'installation à la main)
 
 ## Pour démarrer les services
 `docker-compose up -d`
