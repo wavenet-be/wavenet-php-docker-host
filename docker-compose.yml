@@ -9,10 +9,7 @@ services:
     environment:
       - MYSQL_ALLOW_EMPTY_PASSWORD=true
   api:
-    image: php:8.1-apache
-    build:
-      context: php
-      dockerfile: Dockerfile
+    image: wavenet-php:latest
     ports:
       - 8088:80
       - 2222:22
@@ -22,3 +19,7 @@ services:
 volumes:
   db:
   api:
+
+networks:
+  hosttest:
+    external: true

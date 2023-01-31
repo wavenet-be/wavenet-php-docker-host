@@ -24,4 +24,6 @@ RUN echo "sshuser:Changeme" | chpasswd
 
 EXPOSE 22
 
-#ENTRYPOINT service ssh start && bash
+COPY docker-php-wavenet-entrypoint /usr/local/bin/
+
+CMD [ "docker-php-wavenet-entrypoint" ]
