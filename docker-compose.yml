@@ -1,0 +1,23 @@
+services:
+  db: 
+    image: mysql:5.7
+    command: --lower_case_table_names=1
+    ports:
+      - 3306:3306
+    volumes:
+      - db:/var/lib/mysql
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+  api:
+    image: php:8.1-apache
+    build:
+      context: php
+      dockerfile: Dockerfile
+    ports:
+      - 8088:80
+    volumes:
+      - api:/var/www/html/
+    
+volumes:
+  db:
+  api:
