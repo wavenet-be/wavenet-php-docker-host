@@ -16,8 +16,8 @@ Le projet démarre :
 - Un container php 8.1 avec php mappé sur le répertoire /var/www/html et ouvert sur le port 8088
 
 ## Et en vrai, comment je travaille ?
-PHP est up and running sur le répertoire  `/var/www/html` **du container**, cela veut dire qu'il y a plusieurs options :
-- Se connecter en SSH sur le service, qui démarre sur le port 2222 avec le nom d'utilisateur `sshuser` et le mot de passe : `Changeme`, ensuite c'est comme travailler sur une Debian en ligne de commande :)
+PHP est up and running sur le répertoire  `/var/www/html` **du container**, cela veut dire qu'il y a plusieurs options, par ordre de celle qui se passe le mieux puis ... les autre :
 - Utiliser des outils comme VsCode qui peuvet se connecter directement sur le container et éditer les fichiers
-- Utiliser des fonctionnalités comme le "Remote Development" de JetBrains qui peut se connecter en SSH et développer à distance
 - Utiliser un outil comme *SFTP Drive !* qui peut se connecter et monter un répertoire SFTP comme lecteur Windows (l'édition starter est suffisante) : https://www.nsoftware.com/sftp/drive/download.aspx
+- Se connecter en SSH sur le service, qui démarre sur le port 2222 avec le nom d'utilisateur `sshuser` et le mot de passe : `Changeme`, ensuite c'est comme travailler sur une Debian en ligne de commande :)
+- Utiliser des fonctionnalités comme le "Remote Development" de JetBrains qui peut se connecter en SSH et développer à distance
