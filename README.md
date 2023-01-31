@@ -12,8 +12,8 @@ build.bat
 
 # Utilisation
 Le projet démarre :
-- Une base de données MySql 3.7 ouverte sur le port 3306, utilisateur root, sans mot de passe
-- Un container php 8.1 avec php mappé sur le répertoire /var/www/html et ouvert sur le port 8088
+- Une base de données **MySql 5.7** ouverte sur le port **3306**, utilisateur root, sans mot de passe
+- Un container php 8.1 avec php mappé sur le répertoire /var/www/html et ouvert sur le **port 8088**
 
 ## Et en vrai, comment je travaille ?
 PHP est up and running sur le répertoire  `/var/www/html` **du container**, cela veut dire qu'il y a plusieurs options, par ordre de celle qui se passe le mieux puis ... les autre :
