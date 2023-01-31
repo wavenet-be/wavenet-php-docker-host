@@ -1,7 +1,9 @@
-# Démarrage de l'image
-
+# Génération des images
 ## A chaque mise à jour de l'image
-`docker-compose build`
+```bash
+cd images\\wavenet-php
+build.bat
+```
 
 ## Pour démarrer les services
 `docker-compose up -d`
