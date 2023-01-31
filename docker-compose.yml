@@ -15,9 +15,10 @@ services:
       dockerfile: Dockerfile
     ports:
       - 8088:80
-      - 2222:22
+      - 2121:21
     volumes:
       - api:/var/www/html/
+      #- ./php/proftpd.conf:/etc/proftpd.conf
     
 volumes:
   db:
