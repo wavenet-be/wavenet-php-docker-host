@@ -11,7 +11,6 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql intl zip bcmath gd && docker-php
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-
 RUN apt-get install -y openssh-server systemctl
 RUN systemctl enable ssh
 
@@ -21,6 +20,8 @@ RUN sed -i 's/PermitRootLogin password/PermitRootLogin yes/' /etc/ssh/sshd_confi
 
 RUN useradd -m -s /bin/bash sshuser
 RUN echo "sshuser:Changeme" | chpasswd
+
+RUN chmod 777 -R /var/www/html
 
 EXPOSE 22
 
